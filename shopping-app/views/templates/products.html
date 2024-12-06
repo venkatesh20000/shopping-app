@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <title>Products</title>
+</head>
+<body>
+    <h1>Products</h1>
+    <ul>
+        {{range .}}
+        <li>{{.}} <a href="/add-to-cart">Add to Cart</a></li>
+        {{end}}
+    </ul>
+    <a href="/cart">Go to Cart</a>
+</body>
+</html>
+
